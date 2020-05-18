@@ -1,0 +1,47 @@
+body {
+	background-color: #eee;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover { 
+  color: red;
+}
+
+
+#container {
+  background-color: white ; 
+  width: 1200px ;
+  height: 100vh ;
+  margin-left: auto ;
+  margin-right: auto;
+}
+
+
+
+#header {
+	padding: 10px;
+
+}
+
+#title {
+	width: 300px;
+	float: left;
+}
+
+#nav {
+	text-align: right;
+	line-height: 43px;
+	width: 480px;
+	float: right;
+}
+
+#content {
+	text-align: center;
+	clear: both;
+}
+
+.selected {
+}
