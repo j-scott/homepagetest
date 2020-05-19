@@ -13,13 +13,11 @@ a:hover {
 
 #container {
   background-color: white ; 
-  width: 1200px ;
+  width: 1140px ;
   height: 100vh ;
   margin-left: auto ;
   margin-right: auto;
 }
-
-
 
 #header {
 	padding: 10px;
@@ -33,7 +31,8 @@ a:hover {
 
 #nav {
 	text-align: right;
-	line-height: 43px;
+	line-height: 85px;
+	height: 110px;
 	width: 480px;
 	float: right;
 }
