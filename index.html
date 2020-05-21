@@ -8,7 +8,6 @@
 
 <body>
 
-
 <div class="container" id="container">
 		<div id="header">
 
@@ -31,6 +30,69 @@
 			<br>
 
 			<iframe src="https://player.vimeo.com/video/416063090?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&autopause=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br>
+			 <!-- https://www.w3schools.com/code/tryit.asp?filename=GEZNNJ54KH5W -->
+
+
+
+			 <!-- BELOW THIS POINT IS IMAGES AND PREV/NEXT BUTTONS -->
+<div>
+  <img class="mySlides" src="ipad1.jpg" style="width:100px">
+  <img class="mySlides" src="ipad2.jpg" style="width:100px">
+  <img class="mySlides" src="pic3.jpg" style="width:100px; height:56px" >
+</div>
+
+<div>
+<button class="button" onclick="plusDivs(-1)"> < Prev </button>
+<button class="button" onclick="plusDivs(1)">Next > </button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+
 
 			<!-- <iframe src="https://player.vimeo.com/video/416063618?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1" width="640" height="360" frameborder="0" allow="autoplay=true; loop=true; fullscreen" allowfullscreen></iframe> -->
 			<!-- <iframe src="https://player.vimeo.com/video/416063618?loop=1&autopause=0&background=1" width="640" height="360" frameborder="0" allow="autoplay=true; loop=1; fullscreen" allowfullscreen></iframe> -->
