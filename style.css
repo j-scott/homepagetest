@@ -1,13 +1,6 @@
-body {
-	background-color: #eee;
-}
 
-a {
-	text-decoration: none;
-	color: black;
-}
-a:hover { 
-  color: red;
+body {
+	background-color: white;
 }
 
 
@@ -19,22 +12,26 @@ a:hover {
   margin-right: auto;
 }
 
-#header {
-	padding: 10px;
-
-}
-
 #title {
-	width: 300px;
+	width: 400px;
+  height: 130px;
 	float: left;
 }
 
 #nav {
 	text-align: right;
-	line-height: 85px;
-	height: 110px;
+	line-height: 80px;
+	height: 130px;
 	width: 480px;
 	float: right;
+}
+
+a.selected{
+  text-decoration: none;
+  color: black;
+}
+a:hover.selected{ 
+  color: red;
 }
 
 #content {
@@ -52,9 +49,12 @@ a:hover {
   display: inline-block;
   font-size: 12px;
 }
-.selected {
+
+
+.mySlides {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
-
-
 
 
