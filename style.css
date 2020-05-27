@@ -26,11 +26,15 @@ body {
 	float: right;
 }
 
-a.selected{
+a.homeselect {
+  text-decoration: none;
+    color: black;
+  }
+a.navselected{
   text-decoration: none;
   color: black;
 }
-a:hover.selected{ 
+a:hover.navselected{ 
   color: red;
 }
 
