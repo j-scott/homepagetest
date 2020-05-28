@@ -43,22 +43,11 @@ a:hover.navselected{
 	clear: both;
 }
 
-.button {
-  background-color: transparent; 
-  border: none;
-  color: black;
-  padding: 5px 15px;
+#footer {
+  clear: both;
+  padding: 60px 0px 10px 0px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
+  font-size: 12px; 
+  bottom: 0px;
 }
-
-
-.mySlides {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
 
